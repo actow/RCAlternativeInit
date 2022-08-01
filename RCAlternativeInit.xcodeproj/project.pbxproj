@@ -11,6 +11,8 @@
 		149E1A17289834FC00B062CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E1A16289834FC00B062CB /* ContentView.swift */; };
 		149E1A19289834FF00B062CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149E1A18289834FF00B062CB /* Assets.xcassets */; };
 		149E1A1C289834FF00B062CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149E1A1B289834FF00B062CB /* Preview Assets.xcassets */; };
+		149E1A242898358800B062CB /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 149E1A232898358800B062CB /* RevenueCat */; };
+		149E1A26289835AC00B062CB /* PossibleRevenueCatImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E1A25289835AC00B062CB /* PossibleRevenueCatImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		149E1A16289834FC00B062CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		149E1A18289834FF00B062CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		149E1A1B289834FF00B062CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		149E1A25289835AC00B062CB /* PossibleRevenueCatImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleRevenueCatImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149E1A242898358800B062CB /* RevenueCat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +59,7 @@
 				149E1A16289834FC00B062CB /* ContentView.swift */,
 				149E1A18289834FF00B062CB /* Assets.xcassets */,
 				149E1A1A289834FF00B062CB /* Preview Content */,
+				149E1A25289835AC00B062CB /* PossibleRevenueCatImplementation.swift */,
 			);
 			path = RCAlternativeInit;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = RCAlternativeInit;
+			packageProductDependencies = (
+				149E1A232898358800B062CB /* RevenueCat */,
+			);
 			productName = RCAlternativeInit;
 			productReference = 149E1A11289834FC00B062CB /* RCAlternativeInit.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 149E1A08289834FC00B062CB;
+			packageReferences = (
+				149E1A222898358800B062CB /* XCRemoteSwiftPackageReference "purchases-ios" */,
+			);
 			productRefGroup = 149E1A12289834FC00B062CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				149E1A17289834FC00B062CB /* ContentView.swift in Sources */,
 				149E1A15289834FC00B062CB /* RCAlternativeInitApp.swift in Sources */,
+				149E1A26289835AC00B062CB /* PossibleRevenueCatImplementation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		149E1A222898358800B062CB /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		149E1A232898358800B062CB /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 149E1A222898358800B062CB /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 149E1A09289834FC00B062CB /* Project object */;
 }
